@@ -654,5 +654,10 @@
 		"url": "/files/skidibi/index.html",
 		"imageSrc": "/files/skidibi/splash.avif",
 		"name": "Skibidi Toilet"
+	},
+	{
+		"url": "/files/five-nights-at-epstiens-island/index.html",
+		"imageSrc": "/app.png",
+		"name": "Five Nights at Epstein's Island"
 	}
 ]

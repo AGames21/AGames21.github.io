@@ -28,8 +28,8 @@ form.addEventListener("submit", async (event) => {
   try {
     await registerSW();
   } catch (err) {
-    error.textContent = "Failed to register service worker.";
-    errorCode.textContent = err.toString();
+    if (error) error.textContent = "Failed to register service worker.";
+    if (errorCode) errorCode.textContent = err.toString();
     throw err;
   }
 

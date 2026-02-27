@@ -106,10 +106,26 @@ class UVServiceWorker extends EventEmitter {
 
             if (reqEvent.intercepted) return reqEvent.returnValue;
 
-            const response = await fetch(requestCtx.send);
+            let response;
+            let lastError;
 
-            if (response.status === 500) {
-                return Promise.reject('');
+            for (const address of this.addresses) {
+                try {
+                    requestCtx.address = address;
+                    response = await fetch(requestCtx.send);
+
+                    if (response.status !== 500) {
+                        break;
+                    }
+
+                    lastError = new Error('Bare server returned 500');
+                } catch (err) {
+                    lastError = err;
+                }
+            }
+
+            if (!response || response.status === 500) {
+                return Promise.reject(lastError || 'Unable to contact any bare server.');
             };
 
             const responseCtx = new ResponseContext(requestCtx, response, this);

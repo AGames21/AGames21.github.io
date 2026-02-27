@@ -1,6 +1,9 @@
 self.__uv$config = {
     prefix: '/staticproxy/indiumlite/',
-    bare:'https://static.99.135.156.178.clients.your-server.de/bare/',
+    bare:[
+        'https://bare.rammerhead.org/bare/',
+        'https://uv.holyubofficial.net/bare/'
+    ],
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: '/staticproxy/uv/uv.handler.js',
