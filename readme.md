@@ -1,13 +1,11 @@
 # AG Arcade
 
-A small, responsive game hub at https://agames21.github.io/.
+A responsive six-game hub at https://agames21.github.io/.
 
-The current collection is OpenFront Friends, HLM2 Web, the existing Drive Mad game, and Retro Bowl. OpenFront, HLM2, and Retro Bowl launch in their own tabs; Drive Mad has a local full-screen-capable player with a link back to the hub.
+OpenFront Friends and HLM2 Web open their dedicated GitHub Pages sites. Drive Mad, Retro Bowl, Moto X3M, and Tiny Fishing play inside same-origin player pages with Back and fullscreen controls. No game card links to Poki.
 
-The homepage has no framework, remote fonts, analytics, or third-party UI scripts. New cover art and branding are original SVGs in `assets/arcade/`. Existing game files and the upstream Apache license are preserved. Game copyrights belong to their respective owners.
+The hub uses plain HTML/CSS and original SVG cover art in `assets/arcade/`. Game engines and assets retain their respective developer credits; see THIRD-PARTY-GAMES.md for imported source snapshots. The original repository license is preserved.
 
-GitHub Actions publishes only the hub's pages, its assets, the license, and `files/drive-mad/`. The larger historical library remains in Git history/source but is not part of the new site's navigation or deployment. `library.html` redirects old bookmarks to the new collection.
+GitHub Actions uses sparse checkout and deploys only the current pages, UI assets, license, and selected game folders. Historical source files remain in Git. `library.html` redirects old bookmarks to the collection.
 
-To preview, serve the repository with any local static HTTP server. No package install or build is needed.
-
-Retro Bowl links to its official web release on Poki. No additional game binaries are bundled for that card.
+Preview with any static HTTP server. No package installation or build is needed.
