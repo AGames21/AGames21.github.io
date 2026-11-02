@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="380" viewBox="0 0 600 380" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="300" y1="0" x2="300" y2="380" gradientUnits="userSpaceOnUse"><stop stop-color="#83A9B4"/><stop offset="1" stop-color="#E1D4B7"/></linearGradient>
+    <linearGradient id="field" x1="300" y1="190" x2="300" y2="380" gradientUnits="userSpaceOnUse"><stop stop-color="#52836C"/><stop offset="1" stop-color="#244C42"/></linearGradient>
+    <linearGradient id="ball" x1="205" y1="109" x2="375" y2="246" gradientUnits="userSpaceOnUse"><stop stop-color="#B7663F"/><stop offset="1" stop-color="#713A2E"/></linearGradient>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h600v380H0z"/>
+  <circle cx="300" cy="68" r="42" fill="#F6DCA0" opacity=".92"/>
+  <path fill="#324C52" d="M0 171h600v16H0zM0 204h600v9H0z" opacity=".72"/>
+  <path fill="url(#field)" d="M0 226h600v154H0z"/>
+  <path stroke="#C8D6B3" stroke-width="3" d="M0 261h600M0 299h600M0 337h600M75 226v154m75-154v154m75-154v154m75-154v154m75-154v154m75-154v154m75-154v154" opacity=".65"/>
+  <path fill="#E8DCC2" d="M487 112h6v115h-6zM470 117h40v24h-40z"/>
+  <path fill="#E4E1D1" d="M470 117h40v4h-40z"/>
+  <path fill="url(#ball)" stroke="#EAC58D" stroke-width="5" d="M161 165c36-34 89-58 142-58 66 0 129 27 153 67-27 40-83 69-150 69-57 0-112-25-145-62-3-4-3-12 0-16Z"/>
+  <path stroke="#F2E8D5" stroke-linecap="round" stroke-width="8" d="m256 135 40 71m-13-80 40 70m-79-49 85 1m-76 32 87 1"/>
+  <path fill="#F2DAA1" d="m302 78 17 34 38 6-28 27 7 38-34-18-34 18 7-38-28-27 38-6 17-34Z"/>
+  <rect x="237" y="276" width="126" height="42" rx="8" fill="#172A29" opacity=".92"/>
+  <text x="300" y="305" fill="#F2DAA1" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="800" text-anchor="middle">'27</text>
+  <path stroke="#F6E8C2" stroke-linecap="round" stroke-width="4" d="M56 91v72m-26-26h52m462-46v72m-26-26h52" opacity=".7"/>
+</svg>

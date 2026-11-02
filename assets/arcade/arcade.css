@@ -6,10 +6,15 @@
 
 .adventure .genre{color:#9a7744}.adventure .play-label>b{background:#efe3bd}
 
-.mario-page{min-height:100vh;display:flex;flex-direction:column}.mario-notice{width:min(1200px,calc(100% - 32px));margin:12px auto;padding:10px 14px;border:1px solid #d8dccd;border-radius:10px;background:#fffdf5;color:#546050;font-size:13px;line-height:1.5}.mario-page .player-frame{flex:1;min-height:min(72vh,720px)}
+.mario-reference-link{display:inline-flex;align-items:center;justify-content:center;flex:none;border-radius:8px;background:#21352d;color:#f5f3e9;padding:9px 13px;font-size:12px;font-weight:700}.mario-reference-link:hover{background:#425f50}
+
+.mario-page{min-height:100vh;display:flex;flex-direction:column}.mario-notice{display:flex;align-items:center;justify-content:space-between;gap:16px;width:min(1200px,calc(100% - 32px));margin:12px auto;padding:10px 14px;border:1px solid #d8dccd;border-radius:10px;background:#fffdf5;color:#546050;font-size:13px;line-height:1.5}.mario-page .player-frame{flex:1;min-height:min(72vh,720px)}
+
+.season-player-page{min-height:100vh;display:flex;flex-direction:column}.season-player-note{width:min(1200px,calc(100% - 32px));margin:12px auto;padding:10px 14px;border:1px solid #d8dccd;border-radius:10px;background:#fffdf5;color:#546050;font-size:13px;line-height:1.5}.season-player-page .player-frame{flex:1;min-height:min(72vh,720px)}
 
 html:fullscreen .player-header{display:none}html:fullscreen .player-frame{height:100dvh;min-height:100dvh}
 
 .expanded-player .player-frame{position:fixed;inset:0;z-index:1;width:100vw;height:100dvh;min-height:100dvh}.expanded-player .player-header{position:fixed;right:12px;top:12px;z-index:2;padding:0;border:0;min-height:0;background:none}.expanded-player .player-header>a,.expanded-player .player-header>h1{display:none}
 
-@media(min-width:951px){.games-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.game-card.strategy{grid-column:span 2}.strategy .game-cover{aspect-ratio:1200/380}.game-card h3{font-size:22px}.game-card:last-child h3{font-size:19px}}
+@media(min-width:951px){.games-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.game-card h3{font-size:22px}.game-card:last-child h3{font-size:19px}}
+@media(max-width:650px){.mario-notice{align-items:flex-start;flex-direction:column}}
