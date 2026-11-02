@@ -16,8 +16,33 @@
       <button id="fullscreen" type="button">Fullscreen &nearr;</button>
     </header>
     <p class="season-player-note">
-      New careers use the official 2026 NFL schedule in the classic browser game. This is a fan update, not the Apple Arcade app; it does not add Gauntlet mode or the official '27 player rosters.
+      New careers use the official 2026 NFL schedule. This fan update keeps the classic browser gameplay; it is not the Apple Arcade app and does not add Gauntlet mode or the official '27 roster. Open the real-data panel below to check current players, coaches and stats.
     </p>
+    <details class="nfl-data-panel" data-nfl-roster-panel>
+      <summary>
+        <span>2026 NFL Rosters, Coaches &amp; Stats</span>
+        <small>Season-to-date · through Week 8</small>
+      </summary>
+      <div class="nfl-data-body">
+        <p class="nfl-data-status" data-status role="status">Open this panel to load the 2026 data.</p>
+        <div class="nfl-data-controls">
+          <label>Team<select data-team aria-label="Filter by NFL team"></select></label>
+          <label>Find a player<input data-search type="search" placeholder="Search name or position" /></label>
+          <span data-count aria-live="polite"></span>
+        </div>
+        <section class="nfl-coaches" data-coaches aria-live="polite"></section>
+        <section class="nfl-player-detail" data-player-detail hidden aria-live="polite"></section>
+        <div class="nfl-roster-table-wrap">
+          <table class="nfl-roster-table">
+            <thead><tr><th>Player</th><th>Pos</th><th>Status</th><th>GP</th><th>CMP</th><th>ATT</th><th>Pass Yds</th><th>Pass TD</th><th>INT</th><th>Rush</th><th>Rush Yds</th><th>Rush TD</th><th>Rec</th><th>Rec Yds</th><th>Rec TD</th><th>Solo Tkl</th><th>Sacks</th><th>Def INT</th><th>FG</th><th>More</th></tr></thead>
+            <tbody data-players></tbody>
+          </table>
+        </div>
+        <p class="nfl-data-credit">
+          Roster/stats data: <a href="https://github.com/nflverse/nflverse-data" target="_blank" rel="noopener noreferrer">nflverse</a>, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a> (aggregated for this team view). Coach snapshot: <a href="https://www.edgehalla.com/nfl/coaches" target="_blank" rel="noopener noreferrer">Edgehalla</a> and <a href="https://www.espn.com/nfl/coaches" target="_blank" rel="noopener noreferrer">ESPN</a>. Independent fan data; no NFL logos or player photos are included.
+        </p>
+      </div>
+    </details>
     <iframe id="game" class="player-frame" src="/files/load/retro-bowl/index.html" title="NFL Retro Bowl 27 fan season update" allow="fullscreen; autoplay; gamepad" allowfullscreen></iframe>
     <script>
       document.getElementById("fullscreen").addEventListener("click", function () {
@@ -29,5 +54,6 @@
         }
       });
     </script>
+    <script type="module" src="/assets/arcade/nfl-roster-panel.js"></script>
   </body>
 </html>
