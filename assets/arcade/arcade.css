@@ -3,3 +3,7 @@
 .sports .genre{color:#b46e4d}.sports .play-label>b{background:#f0ddd1}.hero-ticket{max-width:360px}.ticket-bottom{font-size:6px}.game-bottom{flex-wrap:wrap}.game-bottom>span:first-child{width:100%}@media(min-width:951px){.game-info{padding:18px 15px}.game-info h3{font-size:24px}.game-info>p{min-height:40px}}@media(max-width:650px){.game-bottom{flex-wrap:nowrap}.game-bottom>span:first-child{width:auto}}
 
 .fishing .genre{color:#538b99}.fishing .play-label>b{background:#dcecee}
+
+html:fullscreen .player-header{display:none}html:fullscreen .player-frame{height:100dvh;min-height:100dvh}
+
+.expanded-player .player-frame{position:fixed;inset:0;z-index:1;width:100vw;height:100dvh;min-height:100dvh}.expanded-player .player-header{position:fixed;right:12px;top:12px;z-index:2;padding:0;border:0;min-height:0;background:none}.expanded-player .player-header>a,.expanded-player .player-header>h1{display:none}
