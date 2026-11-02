@@ -34,25 +34,10 @@
 gdsdk= function() {
   // ***** UTILS *****
   function loadJS(FILE_URL, callback) {
-    let scriptEle = document.createElement("script");
-  
-    scriptEle.setAttribute("src", FILE_URL);
-    scriptEle.setAttribute("type", "text/javascript");
-    scriptEle.setAttribute("async", true);
-  
-    document.body.appendChild(scriptEle);
-    
-    // Success
-    scriptEle.addEventListener("load", () => {
-      console.log("--fx--gdsdk--loadJS Done--");
-      callback(true);
-    });
-    
-     // Error
-    scriptEle.addEventListener("error", () => {
-      console.log("--fx--gdsdk--loadJS Error--");
-      callback(false);
-    });
+    // No ad placement is configured for this self-hosted arcade. Report
+    // unavailable inventory through the existing failure path. Rewarded ads
+    // remain unavailable: no watched-ad/reward-complete event is fabricated.
+    setTimeout(function () { callback(false); }, 0);
   }
 
   // ***** INIT *****
