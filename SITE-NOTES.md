@@ -13,3 +13,7 @@ New hub UI and SVG covers are self-contained. Drive Mad's old portal title, lega
 Local Chrome verification passed: exactly three correct game links; no visible old branding; desktop and 390px mobile layouts; no horizontal overflow; old library bookmark redirects; Drive Mad rendered a running game canvas inside the new player; no missing local resources or JavaScript page errors. Screenshots were visually inspected.
 
 The Pages workflow packages the small current site and the 2.9 MB Drive Mad folder. It uses sparse checkout rather than uploading the full historical repository.
+
+## Retro Bowl addition
+
+Added a fourth card for Retro Bowl, linking to the official Poki web release. Updated collection counts and desktop/tablet/mobile grids; added an original SVG football cover. The existing three games remain linked as before.
