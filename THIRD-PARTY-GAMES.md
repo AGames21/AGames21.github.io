@@ -7,6 +7,8 @@ Retro Bowl uses the existing archived build from this repository. Moto X3M and T
 
 Game engines, artwork, music, and developer credits remain the property of their respective creators and are not relicensed as the arcade UI. Original runtime files are retained apart from portal/analytics loader removal and page metadata. AG Arcade wraps them in same-origin pages; no Poki launch links are used. Tiny Fishing ad inventory is explicitly unavailable on this host; its existing failure callback resumes the game and denies rewarded bonuses. The imported external ad loader is not executed.
 
+Super Mario 64 opens the existing WebRetro 6.5 browser emulator (MIT; https://github.com/BinBashBanana/webretro) with its Mupen64Plus-Next Nintendo 64 core. The site does not include or fetch a Super Mario 64 ROM; the player selects a game file from their own device, which WebRetro reads in the browser. Nintendo game content and trademarks remain Nintendo's property.
+
 
 ## 2026-11-02: Retro Bowl College
 
