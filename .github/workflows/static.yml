@@ -24,15 +24,16 @@ jobs:
             assets/arcade
             files/drive-mad
             files/load/retro-bowl
+            files/load/rbcollege
             files/games/moto-x3m
             files/games/tiny-fishing
       - name: Prepare curated site
         run: |
           mkdir -p site/assets site/files/load site/files/games
-          cp index.html library.html drive-mad.html retro-bowl.html moto-x3m.html tiny-fishing.html 404.html LICENSE site/
+          cp index.html library.html drive-mad.html retro-bowl.html moto-x3m.html tiny-fishing.html retro-bowl-college.html 404.html LICENSE site/
           cp -R assets/arcade site/assets/
           cp -R files/drive-mad site/files/
-          cp -R files/load/retro-bowl site/files/load/
+          cp -R files/load/retro-bowl files/load/rbcollege site/files/load/
           cp -R files/games/moto-x3m files/games/tiny-fishing site/files/games/
           touch site/.nojekyll
       - uses: actions/configure-pages@v6

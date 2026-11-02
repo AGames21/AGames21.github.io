@@ -6,3 +6,8 @@ Retro Bowl uses the existing archived build from this repository. Moto X3M and T
 - https://github.com/ubg98/TinyFishing at `0d12e52af4d244e333f2f3177b9e6075f2725232`
 
 Game engines, artwork, music, and developer credits remain the property of their respective creators and are not relicensed as the arcade UI. Original runtime files are retained apart from portal/analytics loader removal and page metadata. AG Arcade wraps them in same-origin pages; no Poki launch links are used. Tiny Fishing ad inventory is explicitly unavailable on this host; its existing failure callback resumes the game and denies rewarded bonuses. The imported external ad loader is not executed.
+
+
+## 2026-11-02: Retro Bowl College
+
+Added the seventh game, Retro Bowl College, using the existing local `files/load/rbcollege` engine. The new wrapper and all game assets deploy on AGames21.github.io; no Poki destination link. Added a matching cover and balanced the desktop grid. Browser checks passed: seven cards, mobile overflow check, College canvas, career setup, and fullscreen. The engine optionally probes for `rb_save_-1.json` on a fresh profile; that missing save is expected. Game rights remain with New Star Games.
