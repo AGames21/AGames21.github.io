@@ -16,18 +16,19 @@
       <button id="fullscreen" type="button">Fullscreen &nearr;</button>
     </header>
     <div class="mario-notice">
-      <span>Want to start right away? Open the web version you shared. To play inside AG Arcade, choose your own game file in the emulator; it stays in your browser and is not uploaded. No ROM is included here.</span>
-      <a class="mario-reference-link" href="https://supermario64.io/" target="_blank" rel="noopener noreferrer">Play now ↗</a>
+      <span>The shared Super Mario 64 version loads from its external game host. Use the emulator's Save Manager to manage progress, or choose your own game file.</span>
+      <button id="own-file" class="mario-reference-link" type="button">Choose my own file</button>
     </div>
     <iframe
       id="game"
       class="player-frame"
-      src="/files/load/webretro/index.html?core=mupen64plus_next&amp;nobundle"
-      title="Nintendo 64 emulator. Choose your own Super Mario 64 game file to play."
+      src="/files/load/webretro/index.html?core=mupen64plus_next&amp;nobundle&amp;rom=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fbubbls%2Fclsm64%40139e09e38eb3e7783095eee30fdf75b18ee59e02%2FSuper%2520Mario%252064%2520%28USA%29.zip"
+      title="Super Mario 64 browser player"
       allow="fullscreen; autoplay; gamepad"
       allowfullscreen
     ></iframe>
     <script>
+      document.getElementById("own-file").onclick=()=>{document.getElementById("game").src="/files/load/webretro/index.html?core=mupen64plus_next&nobundle";};
       document.getElementById("fullscreen").addEventListener("click", function () {
         var frame = document.documentElement;
         if (frame.requestFullscreen) {

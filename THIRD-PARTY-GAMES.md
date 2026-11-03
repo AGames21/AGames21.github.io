@@ -40,3 +40,9 @@ Standard Retro Bowl is restored: deployment no longer patches Schedule17.txt and
 The following local game artwork is reused in assets/arcade/icons: Drive Mad webapp/cover.jpg, Retro Bowl img/icon.jpg, HexGL icon_256.png and Hextris images/icons/apple-touch-512.png. The creator and license notices above continue to apply; HexGL and Hextris source/licenses remain in files/games.
 
 OpenFront, HLM2 Web, Moto X3M, Tiny Fishing, Retro Bowl College, Super Mario 64 and Tank Arena use original SVG illustrations created for this arcade. These are unofficial visual remakes, not official publisher logos. Game names and recognizable characters remain the property of their respective owners. No private game assets or ROMs were added for these illustrations.
+
+## 2026-11-03: Krillion and puzzle games
+
+Added Krillion as an explicitly approved same-tab link to https://krillion.io/ (it blocks embedding). Added self-hosted original 2048 by Gabriele Cirulli (MIT, https://github.com/gabrielecirulli/2048 at 478b6ec346e3787f589e4af751378d06ded4cbbc) and Wordle+ by MikhaD (GPL-3.0, https://github.com/MikhaD/wordle at 199122be1f3ed71f5cf4abd5748debd91ee540a0). Licenses and modified Wordle+ build source are included. Wordle+ is an unofficial clone; it is not the NYT game. Analytics removed and local save keys namespaced under agArcade.* for isolation and backup inclusion. New catalog icons are original unofficial illustrations.
+
+The user-provided Drive HTML was a Super Mario 64 launcher. The existing Mario card/player now uses its external game URL with the already-hosted WebRetro emulator. No ROM was added to this repository. The unrelated cloak script and Google-parent dependency were not imported. External game availability is outside AG Arcade control; own-file mode remains available.

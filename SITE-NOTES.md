@@ -49,3 +49,15 @@ Final focused checks: held mobile touch input moved the tank; malformed/credenti
 Replaced the large banner, ticket and numbered cards with a compact header, search/filter row and consistent rounded game tiles. The homepage-only home.css keeps player layouts separate. All eleven launch destinations, favorite/recent storage keys and backup controls remain intact. Four game icons reuse existing local artwork; seven are original SVG remakes.
 
 Focused Chrome checks passed at 1440px, 390px and 320px: all eleven icons loaded, no horizontal overflow or page errors, favorite persistence, search, genre/recent filters, backup dialog and same-tab launch links. Desktop and mobile screenshots reviewed. This is a catalog presentation change; game engines and save formats are unchanged.
+
+## 2026-11-03: Krillion and puzzle games
+
+Added Krillion as an explicitly approved same-tab link to https://krillion.io/ (it blocks embedding). Added self-hosted original 2048 by Gabriele Cirulli (MIT, https://github.com/gabrielecirulli/2048 at 478b6ec346e3787f589e4af751378d06ded4cbbc) and Wordle+ by MikhaD (GPL-3.0, https://github.com/MikhaD/wordle at 199122be1f3ed71f5cf4abd5748debd91ee540a0). Licenses and modified Wordle+ build source are included. Wordle+ is an unofficial clone; it is not the NYT game. Analytics removed and local save keys namespaced under agArcade.* for isolation and backup inclusion. New catalog icons are original unofficial illustrations.
+
+The user-provided Drive HTML was a Super Mario 64 launcher. The existing Mario card/player now uses its external game URL with the already-hosted WebRetro emulator. No ROM was added to this repository. The unrelated cloak script and Google-parent dependency were not imported. External game availability is outside AG Arcade control; own-file mode remains available.
+
+## 2026-11-03: dark themes and interactive backdrop
+
+Removed the introductory slogans at the user request. Midnight is the default, with Forest, Dusk and Daylight selections saved under agArcade.theme.v1. A lightweight canvas particle field repels the pointer and settles back; it pauses when hidden and respects reduced-motion settings. Small footer credit reads made by Aiden. User requested skipping longer gameplay tests; final pass is limited to source/syntax and the existing bounded checks already run.
+
+Validation scope: 14 catalog cards/icons and mobile width checked before theme changes; 2048 accepted actual moves and persisted identical game state across reload. Wordle+ rendered its tutorial and keyboard without page errors; gameplay persistence was not confirmed. Mario fetched into the emulator Start screen; actual gameplay was not verified. Theme JavaScript syntax and git diff whitespace checks pass. No extended gameplay testing was run after the user requested faster turnaround.
