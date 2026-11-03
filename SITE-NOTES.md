@@ -63,3 +63,5 @@ Removed the introductory slogans at the user request. Midnight is the default, w
 Validation scope: 14 catalog cards/icons and mobile width checked before theme changes; 2048 accepted actual moves and persisted identical game state across reload. Wordle+ rendered its tutorial and keyboard without page errors; gameplay persistence was not confirmed. Mario fetched into the emulator Start screen; actual gameplay was not verified. Theme JavaScript syntax and git diff whitespace checks pass. No extended gameplay testing was run after the user requested faster turnaround.
 
 Follow-up: brighter high-contrast text, translucent cards/controls, and denser/brighter background particles (65-220 based on viewport). Syntax checked; no extended browser testing requested.
+
+Follow-up: default theme renamed Black & White, with near-black surfaces and pure white text including secondary labels, placeholders and controls. Other selectable themes retained.
