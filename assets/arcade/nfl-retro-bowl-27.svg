@@ -15,6 +15,6 @@
   <path stroke="#F2E8D5" stroke-linecap="round" stroke-width="8" d="m256 135 40 71m-13-80 40 70m-79-49 85 1m-76 32 87 1"/>
   <path fill="#F2DAA1" d="m302 78 17 34 38 6-28 27 7 38-34-18-34 18 7-38-28-27 38-6 17-34Z"/>
   <rect x="237" y="276" width="126" height="42" rx="8" fill="#172A29" opacity=".92"/>
-  <text x="300" y="305" fill="#F2DAA1" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="800" text-anchor="middle">'27</text>
+  <text x="300" y="305" fill="#F2DAA1" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="800" text-anchor="middle">2026</text>
   <path stroke="#F6E8C2" stroke-linecap="round" stroke-width="4" d="M56 91v72m-26-26h52m462-46v72m-26-26h52" opacity=".7"/>
 </svg>
