@@ -7,3 +7,7 @@ html[data-theme="daylight"]{color-scheme:light;--bg:#f3f5f1;--panel:#ffffff;--fi
 @media(prefers-reduced-motion:reduce){.arcade-home,.arcade-home *{transition:none!important;animation:none!important}}
 
 .arcade-home .game-card .game-cover{background:var(--cover)!important}
+
+/* High contrast text with translucent surfaces over the particle field. */
+html{--ink:#f5f8ff;--muted:#c5d1e3}html[data-theme="forest"]{--ink:#f4fff7;--muted:#c2dfcd}html[data-theme="dusk"]{--ink:#fff5ff;--muted:#e0c9ec}html[data-theme="daylight"]{--ink:#142d20;--muted:#415c49}
+.arcade-home{font-weight:450}.arcade-home .game-card{background:color-mix(in srgb,var(--panel) 76%,transparent);backdrop-filter:blur(8px)}.arcade-home .game-card .game-cover{background:color-mix(in srgb,var(--cover) 65%,transparent)!important}.arcade-home .library-tools input,.arcade-home .library-tools select,.arcade-home .backup-link,.arcade-home .theme-picker select{background:color-mix(in srgb,var(--field) 80%,transparent);backdrop-filter:blur(8px);color:var(--ink)}.arcade-home .game-info h3{color:var(--ink)!important;font-weight:750!important}.arcade-home .game-info .genre,.arcade-home .library-tabs button,.arcade-home #library-results,.arcade-home .arcade-footer,.arcade-home .arcade-footer a{color:var(--muted)!important}.arcade-home .arcade-footer>span{opacity:.85}.arcade-home .library-tabs button[aria-pressed="true"]{color:var(--ink)!important}.arcade-home .search-field input::placeholder{color:var(--muted)!important}
