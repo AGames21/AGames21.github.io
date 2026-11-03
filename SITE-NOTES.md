@@ -65,3 +65,5 @@ Validation scope: 14 catalog cards/icons and mobile width checked before theme c
 Follow-up: brighter high-contrast text, translucent cards/controls, and denser/brighter background particles (65-220 based on viewport). Syntax checked; no extended browser testing requested.
 
 Follow-up: default theme renamed Black & White, with near-black surfaces and pure white text including secondary labels, placeholders and controls. Other selectable themes retained.
+
+Particle follow-up: increased to 100-320 particles by viewport, larger points at 85% opacity and brighter connecting lines. Pointer repulsion/reduced-motion handling retained.
