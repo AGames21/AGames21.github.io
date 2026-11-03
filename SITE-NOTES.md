@@ -43,3 +43,9 @@ Browser checks passed: eleven cards, favorite persistence, search/genre filterin
 
 
 Final focused checks: held mobile touch input moved the tank; malformed/credential-bearing backup restoration was rejected before replacing saves. OpenFront quit returned to its own menu. A real world was exported, removed from IndexedDB, restored and resumed via the public UI. Guest arena win-count UI was tested with a controlled winning-state fixture; this does not prove full-match gameplay balance. All temporary network test rooms and anonymous accounts were cleaned up.
+
+## 2026-11-03: simpler arcade homepage
+
+Replaced the large banner, ticket and numbered cards with a compact header, search/filter row and consistent rounded game tiles. The homepage-only home.css keeps player layouts separate. All eleven launch destinations, favorite/recent storage keys and backup controls remain intact. Four game icons reuse existing local artwork; seven are original SVG remakes.
+
+Focused Chrome checks passed at 1440px, 390px and 320px: all eleven icons loaded, no horizontal overflow or page errors, favorite persistence, search, genre/recent filters, backup dialog and same-tab launch links. Desktop and mobile screenshots reviewed. This is a catalog presentation change; game engines and save formats are unchanged.

@@ -34,3 +34,9 @@ OpenFront and HLM2 now navigate in the current tab. OpenFront has an AG Arcade r
 Both run from same-origin GitHub Pages assets. Removed analytics bootstrap scripts and repaired insecure font/favicon references; developer credits remain. Tank Arena is original code, not a copied game. Firebase SDK 13.1.0 is Apache licensed; linked legal notices accompany its esbuild bundle.
 
 Standard Retro Bowl is restored: deployment no longer patches Schedule17.txt and the page/card no longer advertises a 2026 fan season or NFL Retro Bowl 27. Existing engine/storage paths are unchanged so careers retain their save keys. The installed browser engine has generated players and single-player gameplay. New Star documents pass-and-play Exhibition for the mobile game: https://www.newstargames.com/post/09-feb-2023-exhibition-mode-for-retro-bowl . This is not online multiplayer for the browser copy.
+
+## Homepage icon artwork (2026-11-03)
+
+The following local game artwork is reused in assets/arcade/icons: Drive Mad webapp/cover.jpg, Retro Bowl img/icon.jpg, HexGL icon_256.png and Hextris images/icons/apple-touch-512.png. The creator and license notices above continue to apply; HexGL and Hextris source/licenses remain in files/games.
+
+OpenFront, HLM2 Web, Moto X3M, Tiny Fishing, Retro Bowl College, Super Mario 64 and Tank Arena use original SVG illustrations created for this arcade. These are unofficial visual remakes, not official publisher logos. Game names and recognizable characters remain the property of their respective owners. No private game assets or ROMs were added for these illustrations.
