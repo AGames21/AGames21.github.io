@@ -4,20 +4,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="theme-color" content="#f5f3e9" />
-    <meta name="description" content="Play the classic Retro Bowl browser game with a fan-updated 2026 NFL schedule." />
-    <title>Retro Bowl — 2026 Fan Season — AG Arcade</title>
+    <meta name="description" content="Play Retro Bowl: build a pro football team, call the plays and win the championship." />
+    <title>Retro Bowl — AG Arcade</title>
     <link rel="icon" href="/assets/arcade/icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/assets/arcade/arcade.css" />
   </head>
-  <body class="player-page season-player-page">
+  <body class="player-page">
     <header class="player-header">
       <a href="/#games">&larr; AG Arcade</a>
-      <h1>Retro Bowl <span style="font-weight:400;color:#9ba98f;font-size:10px">fan season update</span></h1>
+      <h1>Retro Bowl</h1>
       <button id="fullscreen" type="button">Fullscreen &nearr;</button>
     </header>
-    <p class="season-player-note">
-      New careers use the official 2026 NFL schedule. Classic browser edition with generated players. Careers save automatically in this browser; keep site data to preserve them.
-    </p>
     <iframe id="game" class="player-frame" src="/files/load/retro-bowl/index.html" title="Retro Bowl browser game" allow="fullscreen; autoplay; gamepad" allowfullscreen></iframe>
     <script>
       document.getElementById("fullscreen").addEventListener("click", function () {

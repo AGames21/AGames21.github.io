@@ -25,8 +25,10 @@ jobs:
             /index.html
             /library.html
             /drive-mad.html
+            /hexgl.html
+            /hextris.html
+            /tank-arena.html
             /retro-bowl.html
-            /patch-retro-bowl-2026-season.mjs
             /moto-x3m.html
             /tiny-fishing.html
             /retro-bowl-college.html
@@ -47,21 +49,22 @@ jobs:
             /files/load/webretro/pwa.js
             /files/load/webretro/pwa-sw.js
             /files/load/webretro/LICENSE
+            /files/games/hexgl/
+            /files/games/hextris/
             /files/games/moto-x3m/
             /files/games/tiny-fishing/
       - name: Prepare curated site
         run: |
           mkdir -p site/assets site/files/load site/files/games site/files/load/webretro/cores
-          cp index.html library.html drive-mad.html retro-bowl.html moto-x3m.html tiny-fishing.html retro-bowl-college.html super-mario-64.html 404.html LICENSE site/
+          cp hexgl.html hextris.html tank-arena.html index.html library.html drive-mad.html retro-bowl.html moto-x3m.html tiny-fishing.html retro-bowl-college.html super-mario-64.html 404.html LICENSE site/
           cp -R assets/arcade site/assets/
           cp -R files/drive-mad site/files/
           cp -R files/load/retro-bowl files/load/rbcollege site/files/load/
-          node patch-retro-bowl-2026-season.mjs site/files/load/retro-bowl/html5game/Schedule17.txt
           cp files/load/webretro/index.html files/load/webretro/manifest.json files/load/webretro/pwa.js files/load/webretro/pwa-sw.js site/files/load/webretro/
           cp files/load/webretro/LICENSE site/files/load/webretro/
           cp -R files/load/webretro/assets files/load/webretro/uauth files/load/webretro/info site/files/load/webretro/
           cp files/load/webretro/cores/mupen64plus_next_libretro.js files/load/webretro/cores/mupen64plus_next_libretro.wasm site/files/load/webretro/cores/
-          cp -R files/games/moto-x3m files/games/tiny-fishing site/files/games/
+          cp -R files/games/hexgl files/games/hextris files/games/moto-x3m files/games/tiny-fishing site/files/games/
           touch site/.nojekyll
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5

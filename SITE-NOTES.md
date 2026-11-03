@@ -33,3 +33,13 @@ Local Chrome checks passed for the eight-card homepage, 390px mobile width, the 
 ## 2026-11-03: same-tab games and accurate Retro Bowl labeling
 
 OpenFront and HLM2 now navigate in the current tab. OpenFront has an AG Arcade return link. Removed the separate NFL reference-data chart from the Retro Bowl player. The card/page now says Retro Bowl 2026 fan season: this remains the classic browser engine with a 2026 schedule and generated players. It does not contain the licensed NFL Retro Bowl 27 app, real-player roster, official coach database, or imported live NFL stats. The official app is Apple Arcade exclusive (https://www.newstargames.com/nfl-retro-bowl-27). Existing career storage paths and keys are preserved. A fresh career wrote a 232 KB native savedata.ini and survived a full page reload unchanged in browser verification.
+
+
+## 2026-11-03 arcade expansion
+
+Added HexGL, Hextris and an original Tank Arena (practice AI, two-player private codes/invites, sound, keyboard/mouse/touch controls, local win counts). The library now has eleven cards, favorites, recently played, search and genre filters. Save backups export allowed game keys and the current guest/account OpenFront snapshot; Firebase credentials and ROMs are excluded. Restore validates the backup format and supported keys before replacing matching saves. See MULTIPLAYER-AND-SAVES.md. Standard Retro Bowl replaces the fan schedule entry; no 2026 schedule patch is deployed and existing careers keep their storage path.
+
+Browser checks passed: eleven cards, favorite persistence, search/genre filtering, recent games, 390px catalog, actual tank movement, real two-browser private room movement/firing, guest state-write rejection, and host-departure continuation against AI. Backup export/restore passed and excluded a credential canary. HexGL rendered a moving WebGL race and Hextris entered active gameplay without page errors. Full races, long online tank matches and native Retro Bowl mobile multiplayer are not verified.
+
+
+Final focused checks: held mobile touch input moved the tank; malformed/credential-bearing backup restoration was rejected before replacing saves. OpenFront quit returned to its own menu. A real world was exported, removed from IndexedDB, restored and resumed via the public UI. Guest arena win-count UI was tested with a controlled winning-state fixture; this does not prove full-match gameplay balance. All temporary network test rooms and anonymous accounts were cleaned up.

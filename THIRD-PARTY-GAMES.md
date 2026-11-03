@@ -24,3 +24,13 @@ Added the seventh game, Retro Bowl College, using the existing local `files/load
 ## 2026-11-03: same-tab games and accurate Retro Bowl labeling
 
 OpenFront and HLM2 now navigate in the current tab. OpenFront has an AG Arcade return link. Removed the separate NFL reference-data chart from the Retro Bowl player. The card/page now says Retro Bowl 2026 fan season: this remains the classic browser engine with a 2026 schedule and generated players. It does not contain the licensed NFL Retro Bowl 27 app, real-player roster, official coach database, or imported live NFL stats. The official app is Apple Arcade exclusive (https://www.newstargames.com/nfl-retro-bowl-27). Existing career storage paths and keys are preserved. A fresh career wrote a 232 KB native savedata.ini and survived a full page reload unchanged in browser verification.
+
+
+## HexGL and Hextris (2026-11-03)
+
+- HexGL: https://github.com/BKcore/HexGL at 6addc95a2fce3bf05f4d751823cc054c61a16d68. MIT unless a resource specifies otherwise; LICENSE and audio-specific notices/credits retained.
+- Hextris: https://github.com/Hextris/hextris at 3f4847dc8fd7dab3d1c87e6324b9159d92fbd396. GPL-3.0-or-later; complete imported source and LICENSE.md retained in files/games/hextris.
+
+Both run from same-origin GitHub Pages assets. Removed analytics bootstrap scripts and repaired insecure font/favicon references; developer credits remain. Tank Arena is original code, not a copied game. Firebase SDK 13.1.0 is Apache licensed; linked legal notices accompany its esbuild bundle.
+
+Standard Retro Bowl is restored: deployment no longer patches Schedule17.txt and the page/card no longer advertises a 2026 fan season or NFL Retro Bowl 27. Existing engine/storage paths are unchanged so careers retain their save keys. The installed browser engine has generated players and single-player gameplay. New Star documents pass-and-play Exhibition for the mobile game: https://www.newstargames.com/post/09-feb-2023-exhibition-mode-for-retro-bowl . This is not online multiplayer for the browser copy.
