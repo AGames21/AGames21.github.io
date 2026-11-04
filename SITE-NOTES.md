@@ -67,3 +67,5 @@ Follow-up: brighter high-contrast text, translucent cards/controls, and denser/b
 Follow-up: default theme renamed Black & White, with near-black surfaces and pure white text including secondary labels, placeholders and controls. Other selectable themes retained.
 
 Particle follow-up: increased to 100-320 particles by viewport, larger points at 85% opacity and brighter connecting lines. Pointer repulsion/reduced-motion handling retained.
+
+2026-11-04: refined catalog with compact game-first tiles, calmer spacing, reduced corner radii and smaller icons; retained black/white themes, transparent cards, pointer particles and Aiden credit. Existing game links/storage unchanged.
