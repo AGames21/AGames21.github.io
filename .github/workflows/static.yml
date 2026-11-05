@@ -25,6 +25,8 @@ jobs:
             /index.html
             /library.html
             /drive-mad.html
+            /fnae.html
+            /basket-bros.html
             /2048.html
             /wordle.html
             /hexgl.html
@@ -37,6 +39,7 @@ jobs:
             /super-mario-64.html
             /404.html
             /LICENSE
+            /moon-sweepers/
             /assets/arcade/
             /files/drive-mad/
             /files/load/retro-bowl/
@@ -51,6 +54,8 @@ jobs:
             /files/load/webretro/pwa.js
             /files/load/webretro/pwa-sw.js
             /files/load/webretro/LICENSE
+            /files/games/fnae/
+            /files/games/basketbros-io/
             /files/games/2048/
             /files/games/wordle/
             /files/games/hexgl/
@@ -60,7 +65,8 @@ jobs:
       - name: Prepare curated site
         run: |
           mkdir -p site/assets site/files/load site/files/games site/files/load/webretro/cores
-          cp 2048.html wordle.html hexgl.html hextris.html tank-arena.html index.html library.html drive-mad.html retro-bowl.html moto-x3m.html tiny-fishing.html retro-bowl-college.html super-mario-64.html 404.html LICENSE site/
+          cp fnae.html basket-bros.html 2048.html wordle.html hexgl.html hextris.html tank-arena.html index.html library.html drive-mad.html retro-bowl.html moto-x3m.html tiny-fishing.html retro-bowl-college.html super-mario-64.html 404.html LICENSE site/
+          cp -R moon-sweepers site/
           cp -R assets/arcade site/assets/
           cp -R files/drive-mad site/files/
           cp -R files/load/retro-bowl files/load/rbcollege site/files/load/
@@ -68,7 +74,7 @@ jobs:
           cp files/load/webretro/LICENSE site/files/load/webretro/
           cp -R files/load/webretro/assets files/load/webretro/uauth files/load/webretro/info site/files/load/webretro/
           cp files/load/webretro/cores/mupen64plus_next_libretro.js files/load/webretro/cores/mupen64plus_next_libretro.wasm site/files/load/webretro/cores/
-          cp -R files/games/2048 files/games/wordle files/games/hexgl files/games/hextris files/games/moto-x3m files/games/tiny-fishing site/files/games/
+          cp -R files/games/fnae files/games/basketbros-io files/games/2048 files/games/wordle files/games/hexgl files/games/hextris files/games/moto-x3m files/games/tiny-fishing site/files/games/
           touch site/.nojekyll
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5

@@ -69,3 +69,12 @@ Follow-up: default theme renamed Black & White, with near-black surfaces and pur
 Particle follow-up: increased to 100-320 particles by viewport, larger points at 85% opacity and brighter connecting lines. Pointer repulsion/reduced-motion handling retained.
 
 2026-11-04: refined catalog with compact game-first tiles, calmer spacing, reduced corner radii and smaller icons; retained black/white themes, transparent cards, pointer particles and Aiden credit. Existing game links/storage unchanged.
+
+
+## November 5, 2026 — Moon Sweepers 2D
+
+Added the fifteenth catalog entry: an original unofficial single-player 2D adaptation with conveyors, solar power, dust/sand/stone processing, cargo drones, tools and vehicles. Runtime is self-hosted at /moon-sweepers/ and included in the curated Pages workflow. Source: https://github.com/AGames21/moon-sweepers-web . Original Canvas art/audio/code are MIT licensed; no original Steam assets/code are distributed. Native-game parity and multiplayer are not claimed. Game saves use their own keys and JSON export/import; the arcade's generic backup format was not expanded.
+
+## 2026-11-05: three requested games
+
+Added Five Nights at Epstein's from https://github.com/n1yshi/Five-Nights-at-Epstein at fde3a47aece9332d6658ad3430672e3fb9650fa9, retaining N1yshi/Jannes credits. Basket Bros is by Blue Wizard Digital, imported from https://github.com/ShadowDevLabs/files/tree/main/basketbros-io; publisher rights remain with their owners. These public repositories do not establish an open-source license for publisher artwork. Both players run same-origin on GitHub Pages. Removed Basket Bros analytics/portal bootstrap and unsupported session-recording calls; online matchmaking in this copy is not promised. FNAE save keys are isolated under agArcade.fnae.* and included by existing save backups. No FNAE/BB backend is added. Agar.io opens the official https://agar.io/ in the current tab because real online play uses its service; it is not represented as self-hosted. Added original camera/cell icons and reused Basket Bros thumbnail. Catalog now has 18 entries, preserving the already-added Moon Sweepers 2D.
