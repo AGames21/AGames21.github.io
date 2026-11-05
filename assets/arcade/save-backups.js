@@ -38,9 +38,9 @@ function encode(bytes) {
     s += String.fromCharCode(...bytes.subarray(i, i + 32768));
   return btoa(s);
 }
-export async function exportBackup() {
+export async function exportBackup(options = {}) {
   const storage = Object.fromEntries(Object.entries(localStorage).filter(([k]) => allowed(k))),
-    saved = await world();
+    saved = options.includeWorld === false ? undefined : await world();
   const campaign = saved ? { ...saved, key: undefined, snapshot: encode(saved.snapshot) } : null;
   const data = {
     kind: "ag-arcade-backup",
@@ -49,6 +49,7 @@ export async function exportBackup() {
     storage,
     campaign,
   };
+  if (options.download === false) return data;
   const url = URL.createObjectURL(new Blob([JSON.stringify(data)], { type: "application/json" }));
   const a = document.createElement("a");
   a.href = url;

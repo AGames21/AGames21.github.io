@@ -23,6 +23,7 @@ jobs:
           sparse-checkout-cone-mode: false
           sparse-checkout: |
             /index.html
+            /move-saves.html
             /library.html
             /drive-mad.html
             /agar.html
@@ -66,7 +67,7 @@ jobs:
       - name: Prepare curated site
         run: |
           mkdir -p site/assets site/files/load site/files/games site/files/load/webretro/cores
-          cp agar.html fnae.html basket-bros.html 2048.html wordle.html hexgl.html hextris.html tank-arena.html index.html library.html drive-mad.html retro-bowl.html moto-x3m.html tiny-fishing.html retro-bowl-college.html super-mario-64.html 404.html LICENSE site/
+          cp move-saves.html agar.html fnae.html basket-bros.html 2048.html wordle.html hexgl.html hextris.html tank-arena.html index.html library.html drive-mad.html retro-bowl.html moto-x3m.html tiny-fishing.html retro-bowl-college.html super-mario-64.html 404.html LICENSE site/
           cp -R moon-sweepers site/
           cp -R assets/arcade site/assets/
           cp -R files/drive-mad site/files/
